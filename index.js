@@ -340,3 +340,38 @@ function addBill() {
     document.getElementById("totalPrice").innerHTML = totalPrice;
   }
 }
+
+function printInvoice(){
+  var doc = new jsPDF('p', 'pt')
+  var startX=40;
+  var startY=100;
+
+  var lineSpacing={
+    NormalSpacing:12,
+  };
+  doc.setFontSize(16);
+  doc.setFontType('bold');
+  doc.text("Invoice", 250, startY+=lineSpacing.NormalSpacing);
+  
+  startY+= 20;
+
+
+  doc.setFontSize(10);
+  doc.setFontType('normal');
+  doc.text("Invoice No:", 400,startY+=lineSpacing.NormalSpacing)
+  doc.text("xyz", 460, startY);
+
+  doc.text("Customer Name:", startX, startY+=lineSpacing.NormalSpacing,'left');
+  doc.text("xyz", 165, startY,'left');
+
+  doc.text("Email:", startX, startY+=lineSpacing.NormalSpacing,'left');
+  doc.text("xyz@gmail.com", 165, startY,'left');
+
+  doc.text("Phone:", startX, startY+=lineSpacing.NormalSpacing,'left');
+  doc.text("9413769432", 165, startY,'left');
+  
+  startY+= 25;
+
+  doc.autoTable({html: '#printTableOnPDF',margin: {top: startY+=lineSpacing.NormalSpacing}});
+  doc.save("table.pdf")
+}
