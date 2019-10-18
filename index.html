@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
@@ -7,49 +8,56 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style.css">
   <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/> -->
-  
+
   <script src="./index.js"></script>
 
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 550px}
-    
+    .row.content {
+      height: 550px
+    }
+
     /* Set gray background color and 100% height */
     .sidenav {
       background-color: #f1f1f1;
       height: 100%;
     }
-        
+
     /* On small screens, set height to 'auto' for the grid */
     @media screen and (max-width: 767px) {
-      .row.content {height: auto;} 
+      .row.content {
+        height: auto;
+      }
     }
   </style>
 </head>
+
 <body>
-<div class="container-fluid">
+  <div class="container-fluid">
     <br>
-    
+
     <div class="col-sm-9">
       <div class="autocomplete" style="width:300px;">
         <input id="myInput" type="text" name="myCountry" placeholder="Country">
       </div>
       <hr>
       <!-- Success message -->
-<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+      <div class="alert alert-success" role="alert" id="success_message">Success <i
+          class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
 
-        <div class="container">
+      <div class="container">
 
 
-        </div>
+      </div>
       <hr>
       <div class="container">
         <!-- Success message -->
-        <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
+        <div class="alert alert-success" role="alert" id="success_message">Success <i
+            class="glyphicon glyphicon-thumbs-up"></i> Success!.</div>
 
       </div>
       <div class="container">
-        <div class="container">	
+        <div class="container">
           <ul class="nav nav-tabs nav-product">
             <li class="active" id="#1_product">
               <a onclick="activateTab('1_product','nav-product','tab-product')" data-toggle="tab">Add Product</a>
@@ -63,108 +71,115 @@
               <div class="well form-horizontal" id="product_form">
                 <fieldset>
                   <!-- Form Name -->
-                  <legend><center><h2><b>Add Product</b></h2></center></legend><br>
+                  <legend>
+                    <center>
+                      <h2><b>Add Product</b></h2>
+                    </center>
+                  </legend><br>
                   <!-- Text input-->
                   <div class="form-group">
-                    <label class="col-md-4 control-label">Product Name</label>  
+                    <label class="col-md-4 control-label">Product Name</label>
                     <div class="col-md-4 inputGroupContainer">
-                    <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input  name="productionName" placeholder="Product Name" class="form-control"  type="text">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="productionName" placeholder="Product Name" class="form-control" type="text">
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label class="col-md-4 control-label">Description</label>  
+                    <label class="col-md-4 control-label">Description</label>
                     <div class="col-md-4 inputGroupContainer">
-                    <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <textarea  name="prodctDescription" placeholder="Product Description" class="form-control"  ></textarea>
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <textarea name="prodctDescription" placeholder="Product Description"
+                          class="form-control"></textarea>
                       </div>
                     </div>
-                  </div>              
+                  </div>
                   <!-- Button -->
                   <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4"><br>
-                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button onclick="submitProduct()" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button
+                        onclick="submitProduct()" class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT
+                        <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
                     </div>
-                  </div>  
+                  </div>
                 </fieldset>
               </div>
             </div>
             <div class="tab-pane" id="2_product">
-                <div class="container">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>Firstname</th>
-                          <th>Lastname</th>
-                          <th>Email</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                          </tr>
-                          <tr>
-                            <td>Mary</td>
-                            <td>Moe</td>
-                            <td>mary@example.com</td>
-                          </tr>
-                          <tr>
-                            <td>July</td>
-                            <td>Dooley</td>
-                            <td>july@example.com</td>
-                          </tr>
-                          <tr>
-                              <td>John</td>
-                              <td>Doe</td>
-                              <td>john@example.com</td>
-                            </tr>
-                            <tr>
-                              <td>Mary</td>
-                              <td>Moe</td>
-                              <td>mary@example.com</td>
-                            </tr>
-                            <tr>
-                              <td>July</td>
-                              <td>Dooley</td>
-                              <td>july@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
-                              </tr>
-                              <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                <td>mary@example.com</td>
-                              </tr>
-  
-                        </tbody>
-                    </table>
-                    <div class="container" style="text-align: center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-end">
-                              <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                              </li>
-                            </ul>
-                          </nav>
-                    </div>
+              <div class="container">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Firstname</th>
+                      <th>Lastname</th>
+                      <th>Email</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      <td>july@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      <td>july@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>mary@example.com</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <div class="container" style="text-align: center">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
-        </div>  
-      </div>
-      <div class="container">
-          <div class="container">	
+        </div>
+        <div class="container">
+          <div class="container">
             <ul class="nav nav-tabs nav-customer">
               <li class="active" id="#1_customer">
                 <a onclick="activateTab('1_customer','nav-customer','tab-customer')" data-toggle="tab">Add Customer</a>
@@ -177,241 +192,336 @@
               <div class="tab-pane active" id="1_customer">
                 <div class="well form-horizontal" id="contact_form">
                   <fieldset>
-                  
-                  <!-- Form Name -->
-                  <legend><center><h2><b>Add Customer</b></h2></center></legend><br>
-                  
-                  <!-- Text input-->
-                  <!-- has-feedback has-error has-danger -->
-                  <!-- <span class="glyphicon form-control-feedback glyphicon-remove" aria-hidden="true"></span>
+
+                    <!-- Form Name -->
+                    <legend>
+                      <center>
+                        <h2><b>Add Customer</b></h2>
+                      </center>
+                    </legend><br>
+
+                    <!-- Text input-->
+                    <!-- has-feedback has-error has-danger -->
+                    <!-- <span class="glyphicon form-control-feedback glyphicon-remove" aria-hidden="true"></span>
                       <div class="help-block with-errors"><ul class="list-unstyled"><li>Please fill in this field.</li></ul></div> -->
-                  <div class="form-group" id='firstName'>
-                    <label class="col-md-4 control-label">First Name</label>  
-                    <div class="col-md-4 inputGroupContainer">
-                      <div class="input-group">
-                        <span class="input-group-addon">@</span>
-                        <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="First Name" required="">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Text input-->
-                  
-                  <div class="form-group" id="lastName">
-                    <label class="col-md-4 control-label" >Last Name</label> 
+                    <div class="form-group" id='firstName'>
+                      <label class="col-md-4 control-label">First Name</label>
                       <div class="col-md-4 inputGroupContainer">
-                      <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control"
+                            id="inputTwitter" placeholder="First Name" required="">
+                        </div>
                       </div>
                     </div>
-                  </div>      
-                  <!-- Text input-->                                                                                                                                    
-                  <div class="form-group" id="address">
-                    <label class="col-md-4 control-label">Address</label>  
-                    <div class="col-md-4 inputGroupContainer">
-                    <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <textarea  name="address" placeholder="Address" class="form-control"  ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                        
-                  <!-- Text input-->
-                  <div class="form-group" id="email">
-                    <label class="col-md-4 control-label">E-Mail</label>  
+                    <!-- Text input-->
+
+                    <div class="form-group" id="lastName">
+                      <label class="col-md-4 control-label">Last Name</label>
                       <div class="col-md-4 inputGroupContainer">
-                      <div class="input-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group" id="address">
+                      <label class="col-md-4 control-label">Address</label>
+                      <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <textarea name="address" placeholder="Address" class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group" id="email">
+                      <label class="col-md-4 control-label">E-Mail</label>
+                      <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                    <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                          <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  
-                  <!-- Text input-->
-                         
-                  <div class="form-group" id="contact_no">
-                    <label class="col-md-4 control-label">Contact No.</label>  
+
+
+                    <!-- Text input-->
+
+                    <div class="form-group" id="contact_no">
+                      <label class="col-md-4 control-label">Contact No.</label>
                       <div class="col-md-4 inputGroupContainer">
-                      <div class="input-group">
+                        <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                    <input name="contact_no" placeholder="(+91)" class="form-control" type="text">
+                          <input name="contact_no" placeholder="(+91)" class="form-control" type="text">
+                        </div>
                       </div>
                     </div>
-                  </div>
-                        
-                        
-                  <!-- Button -->
-                  <div class="form-group">
-                    <label class="col-md-4 control-label"></label>
-                    <div class="col-md-4"><br>
-                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button id="submitCustomer" onclick="submitCustomer()" class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+
+
+                    <!-- Button -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label"></label>
+                      <div class="col-md-4"><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button
+                          id="submitCustomer" onclick="submitCustomer()"
+                          class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span
+                            class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                      </div>
                     </div>
-                  </div>
-                  
+
                   </fieldset>
                 </div>
               </div>
               <div class="tab-pane" id="2_customer">
-                  <div class="container">
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                              <td>John</td>
-                              <td>Doe</td>
-                              <td>john@example.com</td>
-                            </tr>
-                            <tr>
-                              <td>Mary</td>
-                              <td>Moe</td>
-                              <td>mary@example.com</td>
-                            </tr>
-                            <tr>
-                              <td>July</td>
-                              <td>Dooley</td>
-                              <td>july@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
-                              </tr>
-                              <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                <td>mary@example.com</td>
-                              </tr>
-                              <tr>
-                                <td>July</td>
-                                <td>Dooley</td>
-                                <td>july@example.com</td>
-                              </tr>
-                              <tr>
-                                  <td>John</td>
-                                  <td>Doe</td>
-                                  <td>john@example.com</td>
-                                </tr>
-                                <tr>
-                                  <td>Mary</td>
-                                  <td>Moe</td>
-                                  <td>mary@example.com</td>
-                                </tr>
-    
-                          </tbody>
-                      </table>
-                      <div class="container" style="text-align: center">
-                          <nav aria-label="Page navigation example">
-                              <ul class="pagination justify-content-end">
-                                <li class="page-item disabled">
-                                  <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                </li>
-                                <li class="page-item">
-                                  <a class="page-link" href="#">Next</a>
-                                </li>
-                              </ul>
-                            </nav>
-                      </div>
-              </div>
-            </div>
-          </div>  
-        </div>
-    </div>
-    <div class="container">
-        <div class="container">	
-          <ul class="nav nav-tabs nav-billing">
-            <li class="active" id="#1_billing">
-              <a onclick="activateTab('1_billing','nav-billing','tab-billing')" data-toggle="tab">Billing</a>
-            </li>
-            <li id="#2_billing">
-              <a onclick="activateTab('2_billing','nav-billing','tab-billing')" data-toggle="tab">Billing List</a>
-            </li>
-          </ul>
-          <div class="tab-content tab-billing">
-            <div class="tab-pane active" id="1_billing">
-              <div class="well form-horizontal" id="billing_form">
-                Hello
-              </div>
-            </div>
-            <div class="tab-pane" id="2_billing">
                 <div class="container">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                  <div class="container" style="text-align: center">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container">
+            <ul class="nav nav-tabs nav-billing">
+              <li class="active" id="#1_billing">
+                <a onclick="activateTab('1_billing','nav-billing','tab-billing')" data-toggle="tab">Billing</a>
+              </li>
+              <li id="#2_billing">
+                <a onclick="activateTab('2_billing','nav-billing','tab-billing')" data-toggle="tab">Billing List</a>
+              </li>
+            </ul>
+            <div class="tab-content tab-billing">
+              <div class="tab-pane active" id="1_billing">
+                <div class="well form-horizontal" id="billing_form">
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Customer</label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="billingCustomer" placeholder="Customer Name" id="myInputThird" class="form-control"
+                          type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Type</label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <select class="form-control" id="billingType">
+                        <option class="cash">Cash</option>
+                        <option class="other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Product</label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="billingProduct" placeholder="Product Name" id="myInputSecond" class="form-control"
+                          type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Quantity</label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
+                        <input name="billingQuantity" placeholder="Quantity" class="form-control" type="number" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Price</label>
+                    <div class="col-md-4 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-plus"></i></span>
+                        <input name="billingPrice" placeholder="Price" class="form-control" type="number" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"></label>
+                    <div class="col-md-4"><br>
+                      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button onclick="addBill()"
+                        class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT
+                        <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="form-group" style="text-align: right">
+                    <button onclick="printInvoice()" class="btn btn-warning">Print
+                      <span class="glyphicon glyphicon-print"></span>
+                    </button>
+                  </div>
+                  <div id="billingTable">
                     <table class="table table-striped">
                       <thead>
                         <tr>
-                          <th>Firstname</th>
-                          <th>Lastname</th>
-                          <th>Email</th>
+                          <th>Sr.No</th>
+                          <th>Product Name</th>
+                          <th>Quantity</th>
+                          <th>Price</th>
+                          <th>Action</th>
                         </tr>
                       </thead>
-                      <tbody>
-                          <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                          </tr>
-                          <tr>
-                            <td>Mary</td>
-                            <td>Moe</td>
-                            <td>mary@example.com</td>
-                          </tr>
-                          <tr>
-                            <td>July</td>
-                            <td>Dooley</td>
-                            <td>july@example.com</td>
-                          </tr>
-                          <tr>
-                              <td>John</td>
-                              <td>Doe</td>
-                              <td>john@example.com</td>
-                            </tr>
-                            <tr>
-                              <td>Mary</td>
-                              <td>Moe</td>
-                              <td>mary@example.com</td>
-                            </tr>
-                            <tr>
-                              <td>July</td>
-                              <td>Dooley</td>
-                              <td>july@example.com</td>
-                            </tr>
-                            <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>john@example.com</td>
-                              </tr>
-                              <tr>
-                                <td>Mary</td>
-                                <td>Moe</td>
-                                <td>mary@example.com</td>
-                              </tr>
-  
-                        </tbody>
+                      <tbody id="billingTableBody">
+
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th>Total</th>
+                          <th id="totalPrice"></th>
+                          <th></th>
+                        </tr>
+                      </tfoot>
                     </table>
-                    <div class="container" style="text-align: center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-end">
-                              <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Previous</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                              </li>
-                            </ul>
-                          </nav>
-                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="2_billing">
+                <div class="container">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                  <div class="container" style="text-align: center">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
-  </div>
-  </div>
-</div>
+    </div>
 
 </body>
+
 </html>
